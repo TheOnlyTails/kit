@@ -262,7 +262,7 @@ export const getPost = query(v.string(), async (slug) => { /* ... */ });
 export const createPost = form(
 	v.object({
 		title: v.pipe(v.string(), v.nonEmpty()),
-		content:v.pipe(v.string(), v.nonEmpty())
+		content :v.pipe(v.string(), v.nonEmpty())
 	}),
 	async ({ title, content }) => {
 		// Check the user is logged in
